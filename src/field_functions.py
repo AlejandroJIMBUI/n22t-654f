@@ -1,5 +1,5 @@
 from vpython import *
-from src.config import *
+from config import *
 
 # Configuración Campo Puntual
 def campo_puntual(r, q, r0):

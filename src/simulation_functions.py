@@ -1,6 +1,6 @@
 from vpython import *
 import numpy as np
-from src.field_functions import *
+from field_functions import *
 
 # Función para la creacion de particulas
 def crear_particulas(origenes, color_particula=color.orange):
@@ -9,7 +9,7 @@ def crear_particulas(origenes, color_particula=color.orange):
     for origen in origenes:
         for ang in np.linspace(0, 2*np.pi, 10):
             pos = origen + vector(0.15*np.cos(ang), 0.15*np.sin(ang), 0)
-            p = sphere(pos=pos, radius=0.03, color=color_particula, make_trail=True, retain=50)
+            p = sphere(pos=pos, radius=0.03, color=color_particula, make_trail=True, retain=1000)
             particulas.append(p)
     return particulas
     """_summary_
